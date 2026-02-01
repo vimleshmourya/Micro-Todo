@@ -26,6 +26,7 @@ jobs:
         run: terraform plan
         working-directory: ./Infra
   Apply-infra:
+    environment: Manual-Validation
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository

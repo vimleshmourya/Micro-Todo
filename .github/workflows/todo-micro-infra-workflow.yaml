@@ -18,11 +18,13 @@ jobs:
         run: terraform init
         working-directory: ./Infra
 
-      # - name: Validate Terraform configuration
-      #   run: terraform validate ./infra
+      - name: Validate Terraform configuration
+        run: terraform validate
+        working-directory: ./Infra
 
-      # - name: Plan Terraform deployment
-      #   run: terraform plan -out=tfplan ./infra
+      - name: Plan Terraform deployment
+        run: terraform plan
+        working-directory: ./Infra
 
       # - name: Apply Terraform deployment
       #   if: github.ref == 'refs/heads/main'

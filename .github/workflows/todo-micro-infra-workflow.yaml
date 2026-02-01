@@ -14,8 +14,8 @@ jobs:
         with:
           terraform_version: 1.5.6
 
-      # - name: Initialize Terraform
-      #   run: terraform init ./infra
+      - name: Initialize Terraform
+        run: terraform init ./infra
 
       # - name: Validate Terraform configuration
       #   run: terraform validate ./infra

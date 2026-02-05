@@ -3,5 +3,5 @@ resource "azurerm_container_registry" "acr" {
   resource_group_name = "rg-aks-01"
   location            = "West Europe"
   sku                 = "Premium"
-  admin_enabled       = false
+  admin_enabled       = true
 }

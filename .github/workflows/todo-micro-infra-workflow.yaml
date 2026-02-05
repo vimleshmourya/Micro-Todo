@@ -11,6 +11,7 @@ permissions:
   contents: read
 jobs:
   Plan-infra:
+    environment: Manual-Validation
     runs-on: ubuntu-latest
     steps:
       - name: Azure login

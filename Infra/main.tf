@@ -1,6 +1,6 @@
-#module "rg" {
-  #source = "./module/rg"
-#}
+module "rg" {
+  source = "./module/rg"
+}
 
  #module "vnet" {
    #depends_on = [module.rg]
@@ -27,10 +27,10 @@
    #source     = "./module/aks"
  #}
 
- module "acr" {
-   depends_on = [module.rg]
-   source     = "./module/acr"
- }
+ #module "acr" {
+   #depends_on = [module.rg]
+   #source     = "./module/acr"
+ #}
 
 # module "sqldb" {
 #   depends_on = [module.rg]

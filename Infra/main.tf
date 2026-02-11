@@ -32,7 +32,7 @@ module "rg" {
    source     = "./module/acr"
  }
 
-# module "sqldb" {
-#   depends_on = [module.rg]
-#   source     = "./module/sqldb"
-# }
+ module "sqldb" {
+   depends_on = [module.rg]
+   source     = "./module/sqldb"
+ }
